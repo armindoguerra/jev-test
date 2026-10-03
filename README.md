@@ -16,7 +16,9 @@ O experimento utiliza o **IMDB Dataset of 50K Movie Reviews**, composto por 50.0
 * `positive`
 * `negative`
 
-A ideia é observar como diferentes estratégias de modelos de linguagem podem resolver o mesmo problema de classificação.
+A ideia é observar como diferentes estratégias de modelos de linguagem podem resolver o mesmo problema de classificação. Esse experimento foi inpirado no artigo *Language Models for Text Classification: From Bag-of-Words to Jev* do pesquisador **Sebastian Raschka** .
+
+* https://magazine.sebastianraschka.com/p/classifier-history-and-jev
 
 ### Abordagens utilizadas
 
@@ -56,6 +58,7 @@ IMDB Dataset
 ```text
 .
 ├── .gitignore
+├── requiremntes.txt
 ├── BERT-versus-jev.ipynb
 ├── app.py
 └── kaggle_imdb_sentimental_analysis.py
@@ -95,8 +98,7 @@ Ele contém o fluxo de treinamento e avaliação do **ModernBERT**, incluindo:
 10. F1-score
 11. Matriz de confusão
 12. Testes de classificação
-
-O notebook também pode ser utilizado para comparar os resultados obtidos pelo ModernBERT com a abordagem baseada em JEV.
+13. Comparação dos Resultados
 
 ---
 
@@ -173,8 +175,7 @@ As principais métricas utilizadas são:
 Percentual de classificações corretas.
 
 ```text
-Accuracy =
-classificações corretas / total de classificações
+Accuracy = classificações corretas / total de classificações
 ```
 
 ### Precision
@@ -213,6 +214,10 @@ O arquivo esperado localmente é:
 data/
 └── imdb-dataset.csv
 ```
+
+Para donwload dos dados:
+
+* https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 
 ---
 
@@ -267,6 +272,8 @@ Para utilizar Jupyter:
 ```bash
 pip install jupyter
 ```
+
+Caso queira instalar a partir do terminal, use o arquivo **requirements.txt**.
 
 ---
 
@@ -327,39 +334,6 @@ Isso mantém o repositório focado em:
 * Documentação
 
 Os modelos treinados podem ser armazenados separadamente em uma plataforma apropriada para artefatos de Machine Learning.
-
----
-
-## 📌 Próximos experimentos
-
-Algumas extensões possíveis deste projeto:
-
-* Comparar diferentes modelos BERT
-* Comparar diferentes tamanhos de modelos
-* Avaliar diferentes valores de `max_length`
-* Comparar zero-shot vs fine-tuning
-* Avaliar tempo de inferência
-* Avaliar consumo de memória
-* Comparar custo computacional
-* Testar diferentes estratégias de fine-tuning
-* Comparar JEV, ModernBERT e outros modelos de linguagem
-* Avaliar o impacto do tamanho do conjunto de treinamento
-
----
-
-## 📚 Contexto do experimento
-
-Este projeto faz parte de uma investigação prática sobre diferentes abordagens para **classificação de textos utilizando modelos modernos de linguagem**, buscando entender não apenas a qualidade das previsões, mas também as diferenças entre:
-
-```text
-Modelo especializado
-        vs
-Modelo pré-treinado + Fine-tuning
-        vs
-Modelos de linguagem utilizados diretamente
-```
-
-O foco está em avaliar essas abordagens de maneira prática, utilizando um problema conhecido e um conjunto de dados comum para comparação.
 
 ---
 
