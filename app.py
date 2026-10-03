@@ -2,8 +2,10 @@ from typesafe_sdk import Choice, TypeSafeClient
 import os
 import time
 
+# O ideal é configurar a JEV_API_KEY nas variáveis de ambiente. Fiz assim apenas
+# para facilitar reprodutibilidade
 os.environ["TYPESAFE_API_KEY"] = (
-    "apikey_2937d98637891ce4575b7ec6a35ffe753f0_aecc47490b9e9b252e05bd1b815fa75cdb8b1030e0c9ceae322d395b37c0b0da"
+    "... incluir a sua JEV_API_KEY..."
 )
 
 client_problem_1 = """"
