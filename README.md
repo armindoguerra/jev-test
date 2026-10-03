@@ -9,7 +9,7 @@ O objetivo é comparar as abordagens utilizando o mesmo problema e, principalmen
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 O experimento utiliza o **IMDB Dataset of 50K Movie Reviews**, composto por 50.000 avaliações de filmes classificadas como:
 
@@ -53,7 +53,7 @@ IMDB Dataset
 
 ---
 
-## 📂 Estrutura do repositório
+## Estrutura do repositório
 
 ```text
 .
@@ -137,7 +137,7 @@ A separação dessa lógica em um módulo independente permite reutilizar a impl
 
 ---
 
-## 🧠 Sobre o ModernBERT
+## Sobre o ModernBERT
 
 O ModernBERT é uma arquitetura moderna baseada em BERT, utilizada neste projeto através de um modelo pré-treinado que posteriormente recebe **fine-tuning para classificação de sentimentos**.
 
@@ -164,7 +164,7 @@ Durante o fine-tuning, seus pesos são ajustados utilizando os exemplos do conju
 
 ---
 
-## 📊 Avaliação
+## Avaliação
 
 O modelo é avaliado utilizando um conjunto de teste separado dos dados utilizados durante o treinamento.
 
@@ -198,7 +198,7 @@ Além das métricas numéricas, o projeto utiliza uma **matriz de confusão** pa
 
 ---
 
-## 🗂️ Dataset
+## Dataset
 
 O experimento utiliza o:
 
@@ -221,7 +221,7 @@ Para donwload dos dados:
 
 ---
 
-## 🚀 Executando o projeto
+## Executando o projeto
 
 ### 1. Clone o repositório
 
@@ -277,7 +277,7 @@ Caso queira instalar a partir do terminal, use o arquivo **requirements.txt**.
 
 ---
 
-## 🍎 Apple Silicon
+## Apple Silicon
 
 O treinamento do ModernBERT pode utilizar a GPU dos Macs com Apple Silicon através do **MPS (Metal Performance Shaders)**.
 
@@ -307,7 +307,7 @@ para executar o modelo na GPU do Apple Silicon.
 
 ---
 
-## 🔬 Reprodutibilidade
+## Reprodutibilidade
 
 Para que a comparação seja consistente, recomenda-se utilizar:
 
@@ -320,7 +320,7 @@ Dessa forma, a comparação procura medir as diferenças entre as abordagens sob
 
 ---
 
-## ⚠️ Modelos e arquivos grandes
+## Modelos e arquivos grandes
 
 Os pesos do ModernBERT fine-tuned podem ocupar centenas de megabytes e, por isso, não fazem parte do repositório Git.
 
@@ -337,7 +337,7 @@ Os modelos treinados podem ser armazenados separadamente em uma plataforma aprop
 
 ---
 
-## 👤 Autor
+## Autor
 
 **Armindo Guerra**
 
